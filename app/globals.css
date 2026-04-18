@@ -207,10 +207,15 @@ img {
   display: grid;
   place-items: center;
   padding: 18px;
+  overflow: hidden;
 }
 
 .hero__logo {
-  width: min(100%, 700px);
+  width: auto;
+  height: auto;
+  max-width: min(100%, 520px);
+  max-height: 360px;
+  object-fit: contain;
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.3));
   animation: heroPulse 5.5s ease-in-out infinite;
 }
@@ -443,7 +448,10 @@ img {
   }
 
   .hero__logo {
-    width: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 260px;
   }
 
   .card {
