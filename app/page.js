@@ -49,20 +49,14 @@ export default function HomePage() {
 
         <section className="hero">
           <div className="hero__logoWrap reveal reveal--delay-2">
-            <div className="heroBrand" aria-label="r3laxik inc. logo">
-              <Image
-                className="heroBrand__mark"
-                src="/logo-mark.png"
-                alt=""
-                width={4800}
-                height={2700}
-                priority
-              />
-              <div className="heroBrand__text">
-                <span>laxik</span>
-                <span>inc.</span>
-              </div>
-            </div>
+            <Image
+              className="hero__logo"
+              src="/logo-full.png"
+              alt="r3laxik inc. full logo"
+              width={4800}
+              height={2700}
+              priority
+            />
           </div>
 
           <article className="card card--bio reveal reveal--delay-3">
